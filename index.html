@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M1A1 - Industrial Music Collaborative Project">
+    <title>M1A1.MUSIC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="noise-overlay"></div>
+
+    <nav>
+        <a href="#hero" class="logo glitch" data-text="M1A1">M1A1</a>
+        <ul class="nav-links">
+            <li><a href="#releases">RELEASES</a></li>
+            <li><a href="#about">ABOUT / COLLAB</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="M1A1">M1A1</h1>
+            <p class="subtitle">INDUSTRIAL AUDIO ARCHITECTURE</p>
+            <a href="#releases" class="btn primary-btn">LATEST TRANSMISSION</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="releases" class="glass-panel">
+            <h2>RELEASES</h2>
+            <div class="release-grid">
+                <!-- Constant (Released) -->
+                <div class="release-card">
+                    <div class="cover-wrapper">
+                        <img src="assets/m1a1.png" alt="Constant Single Cover" class="cover-art">
+                    </div>
+                    <div class="release-info">
+                        <h3>CONSTANT</h3>
+                        <p class="format">SINGLE [DIGITAL]</p>
+                        <p class="release-desc">The debut transmission. A heavy digital synthesis baseline exploring mechanical aggression.</p>
+                        <div class="contributors">
+                            <h4>CONTRIBUTORS:</h4>
+                            <ul>
+                                <li><span class="role">Production & Vocals:</span> Detro</li>
+                            </ul>
+                        </div>
+                        <div class="listen-links">
+                            <a href="#" class="btn primary-btn">SPOTIFY</a>
+                            <a href="#" class="btn primary-btn">APPLE MUSIC</a>
+                            <a href="#" class="btn primary-btn">YOUTUBE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Obituaries (Upcoming) -->
+                <div class="release-card">
+                    <div class="cover-wrapper mask-watermark">
+                        <img src="assets/obituaries.png" alt="Obituaries Single Cover" class="cover-art">
+                    </div>
+                    <div class="release-info">
+                        <h3>OBITUARIES</h3>
+                        <p class="format">SINGLE [DIGITAL]</p>
+                        <p class="release-desc">A crushing wall of MS-20 style bass and heavily processed parallel vocal harmonies.</p>
+                        <div class="contributors">
+                            <h4>CONTRIBUTORS:</h4>
+                            <ul>
+                                <li><span class="role">Production & Lead Vocals:</span> Detro</li>
+                                <li><span class="role">Drum Arrangement:</span> [External Drummer]</li>
+                                <li><span class="role">Additional Harmony:</span> [Contributor Name]</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn secondary-btn">PRE-SAVE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="glass-panel right-align">
+            <h2>THE PROJECT</h2>
+            <div class="about-content">
+                <p>M1A1 is an industrial music collective prioritizing mechanical aggression and sonic experimentation. Driven by heavy digital synthesis and hardware reamping, the project defies solo-artist conventions by operating as an open, collaborative architecture.</p>
+                <p>We build walls of sound. We tear them down. We invite others into the debris to see what can be constructed from the feedback.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="glass-panel">
+            <h2>CONTACT</h2>
+            <p>For booking, collaborations, or analog hardware routing inquiries.</p>
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">TRANSMIT</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 M1A1.MUSIC. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
