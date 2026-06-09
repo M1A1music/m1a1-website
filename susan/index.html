@@ -31,7 +31,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            overflow: hidden;
+            padding: 2rem 0;
         }
 
         /* Blurred background of the cover art */
@@ -134,6 +134,20 @@
             left: 100%;
         }
 
+        .platform-btn-featured {
+            background: var(--accent-color) !important;
+            color: var(--bg-color) !important;
+            border-color: var(--accent-color) !important;
+            font-weight: 900;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+        }
+
+        .platform-btn-featured:hover {
+            background: #00e03a !important;
+            box-shadow: 0 0 25px rgba(0, 255, 65, 0.6);
+            transform: translateY(-2px);
+        }
+
         .footer-logo {
             margin-top: 2rem;
             font-family: 'Share Tech Mono', monospace;
@@ -163,14 +177,14 @@
         <h2>M1A1</h2>
 
         <div class="links-wrapper">
+            <a href="https://m1a1music.bandcamp.com/" target="_blank" rel="noopener noreferrer" class="platform-btn platform-btn-featured">BANDCAMP (Support Directly)</a>
             <a href="https://open.spotify.com/album/52zLIlH1qnW9cPmF57trGY?si=blT5zF8lRASREIp_40d5og" target="_blank" rel="noopener noreferrer" class="platform-btn">SPOTIFY</a>
             <a href="https://music.apple.com/us/album/susan-single/6772203536" target="_blank" rel="noopener noreferrer" class="platform-btn">APPLE MUSIC</a>
             <a href="https://music.youtube.com/playlist?list=OLAK5uy_n5N4p6egoJY-tmbkL26lYflO07qpgT8bI&si=crP1rLwm1j3lHpfu" target="_blank" rel="noopener noreferrer" class="platform-btn">YOUTUBE</a>
             <a href="https://soundcloud.com/m1a1music" target="_blank" rel="noopener noreferrer" class="platform-btn">SOUNDCLOUD</a>
-            <a href="https://m1a1music.bandcamp.com/" target="_blank" rel="noopener noreferrer" class="platform-btn">BANDCAMP</a>
         </div>
 
-        <a href="../index.html" class="footer-logo">M1A1.MUSIC</a>
+        <a href="../index.html" class="footer-logo">Go to m1a1.music &rarr;</a>
     </div>
 </body>
 </html>
