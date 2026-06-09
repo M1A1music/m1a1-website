@@ -26,6 +26,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    padding-bottom: 120px; /* Space for the fixed footer */
 }
 
 body::before {
@@ -425,19 +426,24 @@ input:focus, textarea:focus {
 /* Footer */
 footer {
     text-align: center;
-    padding: 3rem;
+    padding: 1.5rem;
     font-family: var(--font-mono);
     color: #555;
-    border-top: 1px solid #222;
-    margin-top: 4rem;
-    background: rgba(0,0,0,0.8);
+    border-top: 1px solid var(--glass-border);
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer-link {
